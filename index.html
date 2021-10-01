@@ -5,7 +5,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
@@ -17,7 +17,6 @@
       content="A website created for a web development course at Sault College"
     />
     <title>CSD112 - Anthony Silveri</title>
-    <!-- Great work! -->
   </head>
 
   <body>
@@ -33,6 +32,13 @@
       </header>
       <main>
         <h1>Welcome to Anthony's Website!</h1>
+          <a href="images/anthony1000.jpg">
+            <img 
+            src="images/anthony300.jpg" 
+            sizes="(max-width:500px) 150px, 300px"
+            srcset="images/anthony150.jpg 150w, images/anthony300.jpg 300w"
+            alt="A picture of me with a chameleon climbing on my glasses">
+          </a>
         <p>
           Hello, I'm Anthony! I moved to Canada when I was five years old, and
           have been in Sault Ste. Marie since then. In my spare time I enjoy<br />playing
@@ -48,16 +54,20 @@
           as well as Indie Rock.
         </p>
         <h2>My Favorite Things</h2>
-        <a
+        <figure>
+          <a
           href="https://playvalorant.com/en-us/"
           target="_blank"
           title="The Valorant homepage"
         >
-          <img
-            src="images/logo.png"
-            alt="The logo for Riot's first person shooter, Valorant"
-          />
-        </a>
+          
+            <img
+              src="images/logo.png"
+              alt="The logo for Riot's first person shooter, Valorant"
+            />
+          </a>
+            <figcaption>Riot's&trade; first FPS, Valorant</figcaption>
+        </figure>
         <h3>Recent Games</h3>
         <ol>
           <li>Valorant</li>
