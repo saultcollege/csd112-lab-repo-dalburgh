@@ -36,27 +36,23 @@
         <h1>Survey</h1>
         <form action="https://formspree.io/f/xayakgga" method="post">
           <p>
-            <label for="name_field">What is your name? </label
+            <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label
             ><input
               type="text"
               id="name_field"
               name="name_field"
               required
-            /><label for="name_field"
-              ><abbr title="Required" aria-label="Required">*</abbr></label
-            >
+            />
           </p>
           <p>
-            <label for="email_field">What is your email? </label
+            <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label
             ><input
               type="email"
               placeholder="example@email.com"
               id="email_field"
               name="email_field"
               required
-            /><label for="email_field"
-              ><abbr title="Required" aria-label="Required">*</abbr></label
-            >
+            />
           </p>
           <p>
             <label for="best_whole_number">Which whole number is best? </label
@@ -64,7 +60,7 @@
               type="number"
               name="best_whole_number"
               id="best_whole_number"
-              min="0"
+              min="1"
             />
           </p>
           <p>
@@ -78,9 +74,9 @@
             />
           </p>
           <p>
-            <label for="best_bear">Which bear is best? </label
-            ><select name="best_bear" id="best_bear">
-              <option value="blank" selected>Select</option> <!--The HTML validator mentioned I couldnt leave the option element blank-->
+            <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label
+            ><select name="best_bear" id="best_bear" required>
+              <option value="" selected>&nbsp;</option> <!--The HTML validator mentioned I couldnt leave the option element blank-->
               <option value="black">Black</option>
               <option value="brown">Brown</option>
               <option value="care">Care</option>
@@ -129,7 +125,7 @@
               rows="5"
             ></textarea>
           </p>
-          <button type="submit">Send</button>
+          <p><button type="submit">Send</button></p>
         </form>
       </main>
 
