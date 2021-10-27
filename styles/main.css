@@ -8,22 +8,47 @@ html {
 }
 
 .width-wrap {
-    max-width: 960;
+    background-color: rgba(201, 175, 89, 0.651);
+    max-width: 960px;
     margin: auto;
     padding: 0 2em 2em 2em;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-top-width: 0;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 hr {
+    color: rgba(0, 0, 0, 0);
     width: 50%;
     max-width: 890px;
     min-width: 300px;
-    margin: 3em 0 2em 0;
-    border-bottom: 3px dotted burlywood
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-bottom: 3px dotted rgb(129, 90, 53)
 }
 
 dt::after {
     content: ':';
+}
+
+body {
+    background-color: rgba(222, 166, 113, 0.87);
+    color: rgb(97, 66, 0);
+}
+
+h1,h2,h3 {
+    color:rgb(129, 90, 53)
+}
+
+a {
+    color: rgba(20, 93, 202, 0.774);
+}
+
+header a {
+    color: rgb(129, 90, 53);
+}
+
+::selection {
+    background-color: slateblue;
 }
