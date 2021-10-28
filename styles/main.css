@@ -53,7 +53,6 @@ header a {
 /* Body */
 
 .width-wrap {
-  background-color: rgb(231, 219, 180,);
   background-color: rgba(231, 219, 180, 0.651);
   max-width: 960px;
   margin: auto;
