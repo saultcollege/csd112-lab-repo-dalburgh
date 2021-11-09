@@ -99,6 +99,13 @@ h6 {
   color: rgb(129, 90, 53);
 }
 
+h1 {
+  color: rgba(0, 0, 0, 0);
+  background: rgb(150,149,1);
+  background: linear-gradient(0deg, rgba(150,149,1,1) 44%, rgba(0,255,118,1) 100%); 
+  background-clip: text;
+}
+
 /* Iframe */
 
 iframe {
