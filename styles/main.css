@@ -128,11 +128,24 @@ div.bio img:first-of-type {
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Iframe */
-
 iframe {
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
+}
+
+/* Footer */
+
+footer {
+  font-size: 75%;
+  text-align: center;
+}
+
+footer ~ a {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer ~ a:hover {
+  text-decoration: none;
 }
 
 /* Glossary */
