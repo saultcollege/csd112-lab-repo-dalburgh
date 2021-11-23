@@ -68,7 +68,7 @@ header a {
 /* Body */
 
 ol {
-  list-style-type: upper-alpha;
+  list-style-type: upper-roman;
 }
 
 .width-wrap {
