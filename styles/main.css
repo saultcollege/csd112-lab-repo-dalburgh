@@ -118,6 +118,7 @@ h1 {
   background: rgb(150,149,1);
   background: linear-gradient(0deg, rgba(150,149,1,1) 44%, rgba(0,255,118,1) 100%); 
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
 img {
