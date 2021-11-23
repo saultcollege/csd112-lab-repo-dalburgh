@@ -126,14 +126,14 @@ img {
 
 /* Back to Top Link */
 
-div.width-wrap a:last-of-type {
+div.width-wrap a.top-link {
   bottom: 10px;
   display: inline-block;
   position: sticky;
   margin-left: -25px;
 }
 
-div.width-wrap a:last-of-type:hover {
+div.width-wrap a.top-link:hover {
   transform: rotate(45deg);
 }
 
