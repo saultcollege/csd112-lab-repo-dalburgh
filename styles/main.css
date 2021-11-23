@@ -24,10 +24,12 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
-  display: inline;
+  list-style-type: none;
 }
 
 header nav ul li a {
