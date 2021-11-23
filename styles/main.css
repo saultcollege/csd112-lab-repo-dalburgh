@@ -152,7 +152,13 @@ div.favorites input {
   display: none;
 }
 
-input:checked + label {
+div.favorites input + label {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+div.favorites input:checked + label {
   border-bottom: rgb(0, 0, 0) 3px solid;
   background-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 4px;
@@ -160,18 +166,20 @@ input:checked + label {
 }
 
 div.favorites label + div {
-  display: none;
   width: 100%;
-  justify-content: center;
   border: black 1px solid;
-  box-shadow: black 2px 2px 2px;
+  display: none;
   padding: 1em;
+  box-shadow: black 2px 2px 2px;
+  border-radius: 5px;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-input:checked + label + div {
+div.favorites input:checked + label + div {
   display: flex;
 }
+
 
 /* Footer */
 
@@ -264,4 +272,32 @@ form fieldset ul{
   color: rgb(97, 66, 0);
   border: 0;
   padding: 1em 3em 1em 3em;
+}
+
+/* Gallery */
+
+div.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+div.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.gallery a:hover {
+  scale: 1.1;
+}
+
+div.gallery .row-span-2 {
+  grid-row: span 2;
+}
+
+div.gallery .col-span-2 {
+  grid-column: span 2;
 }
