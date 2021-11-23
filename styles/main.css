@@ -124,6 +124,19 @@ img {
   max-width: 100%;
 }
 
+/* Back to Top Link */
+
+div.width-wrap a:last-of-type {
+  bottom: 10px;
+  display: inline-block;
+  position: sticky;
+  margin-left: -25px;
+}
+
+div.width-wrap a:last-of-type:hover {
+  transform: rotate(45deg);
+}
+
 /* Bio Selfie */
 
 div.bio img:first-of-type {
