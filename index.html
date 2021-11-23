@@ -145,53 +145,87 @@
           </table>
         </div>
         <h2>My Favorite Things</h2>
-        <figure>
-          <a
-            href="https://playvalorant.com/en-us/"
-            target="_blank"
-            title="The Valorant homepage"
-          >
-            <img
-              src="images/logo.png"
-              alt="The logo for Riot's first person shooter, Valorant"
-            />
-          </a>
-          <figcaption>Riot's&trade; first FPS, Valorant</figcaption>
-        </figure>
-        <h3>Recent Games</h3>
-        <ol>
-          <li>Valorant</li>
-          <li>Rimworld</li>
-          <li>Humankind</li>
-        </ol>
-        <h3>Haiku</h3>
-        <p>
-          Creatures big and small<br />
-          Fight in arenas worldwide<br />
-          Return to pockets<br />
-          <cite>Pokemon by <span class="author">Suzie Geeforce</span></cite>
-        </p>
-        <h3>Public Domain Audiobook</h3>
-        <audio controls>
-          <source
-            src="http://www.archive.org/download/short_scifi_016_0905_librivox/alldayseptember_kuykendall_bt_64kb.mp3"
-          />
+        <div class="favorites">
+          <input type="radio" name="favorite-things" id="tab1" checked>          </input>
+          <label for="tab1">            
+            <h3>Top Game</h3>
+          </label>
 
-          <a
-            href="http://www.archive.org/download/short_scifi_016_0905_librivox/alldayseptember_kuykendall_bt_64kb.mp3"
-          >
-            Download A Scientist Rises by Desmond Winter Hall</a
-          >
-        </audio>
-        <h3>Youtube Video</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/L9YlouZ4umM"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          <div>
+            <figure>
+              <a
+                href="https://playvalorant.com/en-us/"
+                target="_blank"
+                title="The Valorant homepage"
+              >
+                <img
+                  src="images/logo.png"
+                  alt="The logo for Riot's first person shooter, Valorant"
+                />
+              </a>
+              <figcaption>Riot's&trade; first FPS, Valorant</figcaption>
+            </figure>
+          </div>
+          <input type="radio" name="favorite-things" id="tab2">          </input>
+          <label for="tab2">            
+            <h3>Recent Games</h3>
+          </label>
+
+          <div>
+            <ol>
+              <li>Valorant</li>
+              <li>Deep Rock Galactic</li>
+              <li>Humankind</li>
+              <li>Hitman III</li>
+              <li>Rimworld</li>
+            </ol>
+          </div>
+          <input type="radio" name="favorite-things" id="tab3">          </input>
+          <label for="tab3">
+            <h3>Haiku</h3>
+          </label>
+
+          <div>
+            <p>
+              Creatures big and small<br />
+              Fight in arenas worldwide<br />
+              Return to pockets<br />
+              <cite>Pokemon by <span class="author">Suzie Geeforce</span></cite>
+            </p>
+          </div>
+          <input type="radio" name="favorite-things" id="tab4">          </input>
+          <label for="tab4">          
+            <h3>Public Domain Audiobook</h3>
+          </label>
+
+          <div>
+            <audio controls>
+              <source
+                src="http://www.archive.org/download/short_scifi_016_0905_librivox/alldayseptember_kuykendall_bt_64kb.mp3"
+              />
+              <a
+                href="http://www.archive.org/download/short_scifi_016_0905_librivox/alldayseptember_kuykendall_bt_64kb.mp3"
+              >
+                Download A Scientist Rises by Desmond Winter Hall</a
+              >
+            </audio>
+          </div>
+          <input type="radio" name="favorite-things" id="tab5">          </input>
+          <label for="tab5">            
+            <h3>Youtube Video</h3>
+          </label>
+
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/L9YlouZ4umM"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </main>
 
       <footer>
