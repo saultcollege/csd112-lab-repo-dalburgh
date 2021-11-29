@@ -169,35 +169,35 @@ iframe {
 
 /* Favorites Box */
 
-div.favorites {
+div.favourites {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-div.favorites label {
+div.favourites label {
   order: -1;
   padding: 1px 1em;
 }
 
-div.favorites input {
+div.favourites input {
   display: none;
 }
 
-div.favorites input + label {
+div.favourites input + label {
   background-color: rgba(0, 0, 0, 0.05);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-div.favorites input:checked + label {
+div.favourites input:checked + label {
   border-bottom: rgb(0, 0, 0) 3px solid;
   background-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-div.favorites label + div {
+div.favourites label + div {
   width: 100%;
   border: black 1px solid;
   display: none;
@@ -208,7 +208,7 @@ div.favorites label + div {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-div.favorites input:checked + label + div {
+div.favourites input:checked + label + div {
   display: flex;
 }
 
