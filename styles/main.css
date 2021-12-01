@@ -346,3 +346,37 @@ div.gallery .col-span-2 {
     grid-column: span 1;
   }
 }
+
+@media screen and (max-width: 550px) {
+  div.bio table thead,
+  div.bio table th,
+  div.bio table tfoot {
+    display: none;
+  }
+
+  div.bio table td {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  div.bio table {
+    caption-side: top;
+    width: 100%; /* To keep the background on either side of the table even */
+  }
+
+  div.bio table td:first-of-type {
+    display: block;
+    padding-top: 0.3em ;
+    font-weight: bold;
+  }
+
+  div.bio table td:last-of-type {
+    padding-bottom: 0.3em;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  
+  div.bio table td:last-of-type::after {
+    content: " hrs/week";
+  }
+}
