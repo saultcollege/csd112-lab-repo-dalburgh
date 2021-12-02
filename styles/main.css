@@ -170,35 +170,35 @@ iframe {
 
 /* Favorites Box */
 
-div.favourites {
+div.favorites {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-div.favourites label {
+div.favorites label {
   order: -1;
   padding: 1px 1em;
 }
 
-div.favourites input {
+div.favorites input {
   display: none;
 }
 
-div.favourites input + label {
+div.favorites input + label {
   background-color: rgba(0, 0, 0, 0.05);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-div.favourites input:checked + label {
+div.favorites input:checked + label {
   border-bottom: rgb(0, 0, 0) 3px solid;
   background-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-div.favourites label + div {
+div.favorites label + div {
   width: 100%;
   border: black 1px solid;
   display: none;
@@ -209,7 +209,7 @@ div.favourites label + div {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-div.favourites input:checked + label + div {
+div.favorites input:checked + label + div {
   display: flex;
 }
 
@@ -364,37 +364,29 @@ div.gallery .col-span-2 {
 
 }
 
-@media screen and (max-width: 705px) {
-  img.loremfleft, img.loremfright {
-    display: block;
-    float: none;
-    margin: auto; /* Added for visual purposes to center the images on smaller screens */
-  }
-}
-
 @media screen and (max-width: 550px) {
   div.bio table thead,
   div.bio table th,
   div.bio table tfoot {
     display: none;
   }
-
+  
   div.bio table td {
     display: block;
     padding: 0 1rem;
   }
-
+  
   div.bio table {
     caption-side: top;
     width: 100%; /* To keep the background on either side of the table even */
   }
-
+  
   div.bio table td:first-of-type {
     display: block;
     padding-top: 0.3em ;
     font-weight: bold;
   }
-
+  
   div.bio table td:last-of-type {
     padding-bottom: 0.3em;
     font-style: italic;
@@ -403,5 +395,23 @@ div.gallery .col-span-2 {
   
   div.bio table td:last-of-type::after {
     content: " hrs/week";
+  }
+}
+
+@media screen and (max-width: 705px) {
+  img.loremfleft, img.loremfright {
+    display: block;
+    float: none;
+    margin: auto; /* Added for visual purposes to center the images on smaller screens */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.favorites {
+    flex-direction: column;
+  }
+  
+  div.favorites label {
+    order: 0;
   }
 }
