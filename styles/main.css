@@ -307,6 +307,22 @@ form fieldset ul{
   padding: 1em 3em 1em 3em;
 }
 
+/* Lorem Ipsum */
+
+ img.loremfleft {
+  margin: 1em;
+  float: left;
+}
+ 
+img.loremfright {
+  margin: 1em;
+  float: right;
+}
+
+ footer.lorem {
+  clear: both;
+}
+
 /* Gallery */
 
 div.gallery {
@@ -344,6 +360,15 @@ div.gallery .col-span-2 {
 @media screen and (max-width: 450px) {
   div.gallery .col-span-2 {
     grid-column: span 1;
+  }
+
+}
+
+@media screen and (max-width: 705px) {
+  img.loremfleft, img.loremfright {
+    display: block;
+    float: none;
+    margin: auto; /* Added for visual purposes to center the images on smaller screens */
   }
 }
 
