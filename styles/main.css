@@ -290,6 +290,10 @@ form label {
   display: block;
 }
 
+form textarea {
+  width: 100%;
+}
+
 [type="radio"] ~ label,
 [type="checkbox"] ~ label {
   display: inline;
@@ -361,7 +365,6 @@ div.gallery .col-span-2 {
   div.gallery .col-span-2 {
     grid-column: span 1;
   }
-
 }
 
 @media screen and (max-width: 550px) {
